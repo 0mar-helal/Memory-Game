@@ -181,7 +181,7 @@ button {
     }
     .sidebar {
         width: 97.3%;
-        padding: 0 10px;
+        padding: 0 7px;
     }
     .sidebar .hint , .sidebar .move ,
     .sidebar .time {
@@ -196,5 +196,8 @@ button {
     }
     .sidebar span {
         font-size: 18px;
+    }
+    .win-message,.lose-message {
+        font-size: 60px;
     }
 } 
