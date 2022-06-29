@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="mem.css">
+    <!---- font Awesome Library ----->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!----Google  font ----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="sidebar">
+        <div class="hint">
+            <p>You have <span>3</span> Hint</p>
+            <i class="fas fa-smile-wink hint"></i>
+        </div>
+        <div class="move">
+            <p><span>0</span> moves</p>
+        </div>
+        <div class="time">
+            <p>Remain <span>120</span>s</p>
+        </div>
+    </div>
+    <div class="option">
+        <h1>Memory Game</h1>
+        <div class="lvl">
+            <h3>Level</h3>
+            <span data-level="Easy" data-cards=6>Easy (2x3)</span>
+            <span data-level="Hard" data-cards=12>Hard (3x4)</span>
+            <span data-level="Expert" data-cards=16>Expert (4x4)</span>
+        </div>
+        <button>Start</button>
+    </div>
+    <div class="shape Easy">
+        <div class="box" data-shape="1">
+            <div class="front"></div>
+            <div class="back">
+                <i class="prize fas fa-trophy"></i>
+            </div>
+        </div>
+        <div class="box" data-shape="2">
+            <div class="front"></div>
+            <div class="back">
+                <div class="face fas fa-smile"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="3">
+            <div class="front"></div>
+            <div class="back">
+                <div class="apple fas fa-apple-alt"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="3">
+            <div class="front"></div>
+            <div class="back">
+                <div class="apple fas fa-apple-alt"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="2">
+            <div class="front"></div>
+            <div class="back">
+                <div class="face fas fa-smile"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="1">
+            <div class="front"></div>
+            <div class="back">
+                <i class="prize fas fa-trophy"></i>
+            </div>
+        </div>
+    </div>
+    <div class="shape Hard">
+        <div class="box" data-shape="4">
+            <div class="front"></div>
+            <div class="back">
+                <div class="face fas fa-carrot"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="6">
+            <div class="front"></div>
+            <div class="back">
+                <div class="spike fas fa-bolt"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="7">
+            <div class="front"></div>
+            <div class="back">
+                <div class="moon fas fa-moon"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="5">
+            <div class="front"></div>
+            <div class="back">
+                <div class="dog fas fa-dog"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="8">
+            <div class="front"></div>
+            <div class="back">
+                <div class="cup fas fa-mug-hot"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="4">
+            <div class="front"></div>
+            <div class="back">
+                <div class="face fas fa-carrot"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="5">
+            <div class="front"></div>
+            <div class="back">
+                <div class="dog fas fa-dog"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="8">
+            <div class="front"></div>
+            <div class="back">
+                <div class="cup fas fa-mug-hot"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="6">
+            <div class="front"></div>
+            <div class="back">
+                <div class="spike fas fa-bolt"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="7">
+            <div class="front"></div>
+            <div class="back">
+                <div class="moon fas fa-moon"></div>
+            </div>
+        </div>
+        <div class="box" data-shape="1">
+            <div class="front"></div>
+            <div class="back">
+                <i class="prize fas fa-trophy"></i>
+            </div>
+        </div>
+        <div class="box" data-shape="1">
+            <div class="front"></div>
+            <div class="back">
+                <i class="prize fas fa-trophy"></i>
+            </div>
+        </div>
+    </div>
+    <div class="shape Expert">
+            <div class="box" data-shape="1">
+                <div class="front"></div>
+                <div class="back">
+                    <i class="prize fas fa-trophy"></i>
+                </div>
+            </div>
+            <div class="box" data-shape="2">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="face fas fa-smile"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="3">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="apple fas fa-apple-alt"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="2">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="face fas fa-smile"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="4">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="face fas fa-carrot"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="5">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="dog fas fa-dog"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="6"> 
+                <div class="front"></div>
+                <div class="back">
+                    <div class="spike fas fa-bolt"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="6">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="spike fas fa-bolt"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="5">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="dog fas fa-dog"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="7">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="moon fas fa-moon"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="8">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="cup fas fa-mug-hot"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="7">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="moon fas fa-moon"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="4">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="face fas fa-carrot"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="8">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="cup fas fa-mug-hot"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="3">
+                <div class="front"></div>
+                <div class="back">
+                    <div class="apple fas fa-apple-alt"></div>
+                </div>
+            </div>
+            <div class="box" data-shape="1">
+                <div class="front"></div>
+                <div class="back">
+                    <i class="prize fas fa-trophy"></i>
+                </div>
+            </div>
+    </div> 
+    <script src="mem.js"></script>
+</body>
+</html>
