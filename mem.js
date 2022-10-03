@@ -122,7 +122,6 @@ function startPlay () {
             }
         })
     });
-    
 }
 
 // Final Message

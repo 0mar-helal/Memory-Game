@@ -15,6 +15,37 @@ body {
     justify-content: center;
     align-items: center;
 }
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:375px) {
+    .container {
+        width:300px;
+    }
+} 
+@media (min-width:376px) and (max-width:575px) {
+    .container {
+        width: 350px;
+    }
+}
+@media (min-width:576px)  and (max-width:767px)  {
+    .container {
+        width: 700px;
+    }
+}
+@media (min-width:768px) and (max-width:991px) { 
+    .container {
+        width:970px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
 .option {
     width: 50%;
     padding: 20px;
@@ -99,7 +130,7 @@ button {
     perspective: 1000px;
     grid-template-columns: repeat(4,100px);
     gap: 5px;
-    margin: 100px auto 80px;
+    margin: 130px auto 80px;
     display: none;
 }
 .Easy {
@@ -201,3 +232,14 @@ button {
         font-size: 45px;
     }
 } 
+@media (max-width:576px) {
+    .box {
+        height: 80px;
+    }
+    .shape {
+        grid-template-columns: repeat(4,70px);
+    }
+    .Easy {
+        grid-template-columns: repeat(3,70px);
+    }
+}
